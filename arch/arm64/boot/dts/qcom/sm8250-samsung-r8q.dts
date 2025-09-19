@@ -24,3 +24,30 @@
 	firmware-name = "qcom/sm8250/Samsung/r8q/slpi.mbn";
 	status = "okay";
 };
+
+&i2c5 {
+    status = "okay";
+
+    touchscreen@20 {
+        compatible = "zilltek,zt7650";
+        reg = <0x20>;
+        interrupt-parent = <&tlmm>;
+        interrupts = <15 IRQ_TYPE_EDGE_FALLING>;
+        avdd-supply = <&tsp_ldo_en>;
+        touchscreen-size-x = <1080>;
+        touchscreen-size-y = <2400>;
+        status = "okay";
+    };
+};
+
+&qupv3_id_0 {
+    status = "okay";
+};
+
+&qupv3_id_1 {
+    status = "okay";
+};
+
+&qupv3_id_2 {
+    status = "okay";
+};
