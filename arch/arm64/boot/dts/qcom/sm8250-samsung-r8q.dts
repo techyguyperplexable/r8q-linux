@@ -18,6 +18,10 @@
         enable-active-high;
         regulator-boot-on;
         };
+memory {
+        device_type = "memory";
+        reg = <0x00 0x80000000 0x00 0x3cc00000 0x00 0xc0000000 0x01 0x40000000>;
+    };
 };
 
 &adsp {
