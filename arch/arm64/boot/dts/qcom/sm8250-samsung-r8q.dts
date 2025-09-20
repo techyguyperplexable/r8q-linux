@@ -17,7 +17,8 @@
         gpio = <&tlmm 92 GPIO_ACTIVE_HIGH>;
         enable-active-high;
         regulator-boot-on;
-    };
+        };
+};
 
 &adsp {
 	firmware-name = "qcom/sm8250/Samsung/r8q/adsp.mbn";
